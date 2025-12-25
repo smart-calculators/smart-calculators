@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MM to Inch Calculator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+<h1>MM to Inch Calculator</h1>
+
+<p>Enter millimeters to convert into inches instantly.</p>
+
+<input type="number" id="mm" placeholder="Enter mm">
+<button onclick="convert()">Convert</button>
+
+<p id="result"></p>
+
+<script>
+function convert() {
+  const mm = document.getElementById("mm").value;
+  const inch = mm / 25.4;
+  document.getElementById("result").innerText = 
+    mm + " mm = " + inch.toFixed(4) + " inches";
+}
+</script>
+
+<p><a href="../">⬅ Back to Home</a></p>
+
+</body>
+</html>
